@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SScrollView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SScrollView.'
+  s.summary          = 'Simple Scroll View'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,27 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'This is lib for adding simple scroll view easily'
                        DESC
 
-  s.homepage         = 'https://github.com/Sasa Jovanovic/SScrollView'
+  s.homepage         = 'https://github.com/saxija/SScrollView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sasa Jovanovic' => 'sasa.jovanovic@delsystems.net' }
-  s.source           = { :git => 'https://github.com/Sasa Jovanovic/SScrollView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/saxija/SScrollView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'SScrollView/Classes/**/*'
-  
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
+  s.source_files = 'Source/**/*'
+  s.platforms = {
+    "ios": "12.0"
+  }
   # s.resource_bundles = {
   #   'SScrollView' => ['SScrollView/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'TinyConstraints', '~> 4.0.0'
 end
