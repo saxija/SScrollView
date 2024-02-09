@@ -1,0 +1,22 @@
+{
+  "name": "SScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of SScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Sasa Jovanovic/SScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sasa Jovanovic": "sasa.jovanovic@delsystems.net"
+  },
+  "source": {
+    "git": "https://github.com/Sasa Jovanovic/SScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SScrollView/Classes/**/*"
+}
