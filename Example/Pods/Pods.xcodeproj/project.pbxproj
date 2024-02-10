@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		5AF1403C2B7629CE004F9DC0 /* SScrollViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF140382B7629CE004F9DC0 /* SScrollViewElement.swift */; };
 		5AF1403D2B7629CE004F9DC0 /* SScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF140392B7629CE004F9DC0 /* SScrollView.swift */; };
 		5AF1403E2B7629CE004F9DC0 /* SScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF1403A2B7629CE004F9DC0 /* SScrollView+.swift */; };
+		5AF140512B76734F004F9DC0 /* InSpmFw.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF1404F2B76734F004F9DC0 /* InSpmFw.xcframework */; };
 		7C014E86CFB3079E2A40BA96C074DF91 /* SScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E528B2A53882F1C4D961D4F9A4EE6CED /* SScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5616E09A00FAC93589BDF0A5CCFF023 /* SScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7AD44A0595B6896929677E3CCF3B0 /* SScrollView-dummy.m */; };
 		ACBAE297FBAF730D5A4E07C40027D1DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -57,6 +58,7 @@
 		5AF140382B7629CE004F9DC0 /* SScrollViewElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SScrollViewElement.swift; sourceTree = "<group>"; };
 		5AF140392B7629CE004F9DC0 /* SScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SScrollView.swift; sourceTree = "<group>"; };
 		5AF1403A2B7629CE004F9DC0 /* SScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SScrollView+.swift"; sourceTree = "<group>"; };
+		5AF1404F2B76734F004F9DC0 /* InSpmFw.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = InSpmFw.xcframework; sourceTree = "<group>"; };
 		61F8504F83F519E1BF9B595E5EF215EA /* Pods-SScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		641C232B1BE5ADD26B6638FC744E8756 /* Pods-SScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		658BC596A0E4FAE984ED0357304A8671 /* Pods-SScrollView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SScrollView_Example-Info.plist"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF140512B76734F004F9DC0 /* InSpmFw.xcframework in Frameworks */,
 				AFA928A857D0647B6C512CD769D94E8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +156,7 @@
 		32C194B2B1533463853E5AFE8BEF9102 /* SScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				5AF1404F2B76734F004F9DC0 /* InSpmFw.xcframework */,
 				5AF140362B76297B004F9DC0 /* Source */,
 				025CE33233DE78CEC0EAC20DAFC42A58 /* Pod */,
 				03BCDADE87B77EF29EB7475BBCB53DBB /* Support Files */,
@@ -449,7 +453,11 @@
 				INFOPLIST_FILE = "Target Support Files/SScrollView/SScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SScrollView/SScrollView.modulemap";
 				PRODUCT_MODULE_NAME = SScrollView;
 				PRODUCT_NAME = SScrollView;
@@ -457,7 +465,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -481,7 +489,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SScrollView_Example/Pods-SScrollView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SScrollView_Example/Pods-SScrollView_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -514,7 +526,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SScrollView_Example/Pods-SScrollView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SScrollView_Example/Pods-SScrollView_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -548,7 +564,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SScrollView_Tests/Pods-SScrollView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SScrollView_Tests/Pods-SScrollView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -619,7 +639,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -643,14 +664,18 @@
 				INFOPLIST_FILE = "Target Support Files/SScrollView/SScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SScrollView/SScrollView.modulemap";
 				PRODUCT_MODULE_NAME = SScrollView;
 				PRODUCT_NAME = SScrollView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -741,7 +766,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SScrollView_Tests/Pods-SScrollView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SScrollView_Tests/Pods-SScrollView_Tests.modulemap";
 				OTHER_LDFLAGS = "";

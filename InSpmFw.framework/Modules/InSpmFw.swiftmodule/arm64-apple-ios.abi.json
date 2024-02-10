@@ -1,0 +1,105 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InSpmFw",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MainCLass",
+        "printedName": "MainCLass",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MainCLass",
+                "printedName": "InSpmFw.MainCLass",
+                "usr": "s:7InSpmFw9MainCLassC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7InSpmFw9MainCLassCACycfc",
+            "mangledName": "$s7InSpmFw9MainCLassCACycfc",
+            "moduleName": "InSpmFw",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "printSmth",
+            "printedName": "printSmth()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7InSpmFw9MainCLassC9printSmthyyF",
+            "mangledName": "$s7InSpmFw9MainCLassC9printSmthyyF",
+            "moduleName": "InSpmFw",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7InSpmFw9MainCLassC",
+        "mangledName": "$s7InSpmFw9MainCLassC",
+        "moduleName": "InSpmFw",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/InSpmFw\/InSpmFw\/InSpmFw\/MainClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 149,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/InSpmFw\/InSpmFw\/InSpmFw\/MainClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 195,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/InSpmFw\/InSpmFw\/InSpmFw\/MainClass.swift",
+      "kind": "IntegerLiteral",
+      "offset": 257,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/InSpmFw\/InSpmFw\/InSpmFw\/MainClass.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 11,
+      "value": "\"IC VRKING\""
+    }
+  ]
+}

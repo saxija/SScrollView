@@ -31,14 +31,17 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.source_files = 'Source/**/*'
+  s.vendored_frameworks = 'InSpmFw.xcframework'
   s.platforms = {
     "ios": "12.0"
   }
+  
+#  s.user_target_xcconfig = {'GENERATE_INFOPLIST_FILE' => 'YES'}
   # s.resource_bundles = {
   #   'SScrollView' => ['SScrollView/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'InSpmFw.xcframework/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'TinyConstraints', '~> 4.0.0'
 end
