@@ -30,11 +30,16 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
-  s.source_files = 'Source/**/*'
-  s.vendored_frameworks = 'InSpmFw.xcframework'
+#  s.source_files = 'Source/**/*'
+#  s.vendored_frameworks = 'InSpmFw.xcframework'
   s.platforms = {
     "ios": "12.0"
   }
+  
+  
+  spec.prepare_command = <<-CMD.strip_heredoc
+    ruby update_infoplist_flag.rb
+  CMD
   
 #  s.user_target_xcconfig = {'GENERATE_INFOPLIST_FILE' => 'YES'}
   # s.resource_bundles = {
